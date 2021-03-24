@@ -73,8 +73,9 @@ Streamlit!
 
 ## Team:
 The team behind this project:
-- [Dr. Najwa AlGhamdi][najwa]
 - [Ali Alohali][ali]
+- [Dr. Najwa AlGhamdi][najwa]
+
 
 
 [najwa]: https://www.najwa-alghamdi.net/

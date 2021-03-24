@@ -66,6 +66,9 @@ came from:
 Streamlit!
 
 ## Download the data:
+[Github Link][download]
+##### The file is zipped because it is big ( +360 MB )
+
 
 ## Usage policies:
 
@@ -77,3 +80,4 @@ The team behind this project:
 
 [najwa]: https://www.najwa-alghamdi.net/
 [ali]: https://www.alioh.com/
+[download]: https://github.com/alioh/AlRiyadh-Newspaper-Covid-Dataset/raw/master/Alriyadh_News_Dataset.zip

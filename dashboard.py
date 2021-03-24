@@ -70,10 +70,11 @@ st.markdown('## Exploratory Data Analysis:')
 st.markdown('''In this section, we will give you a brief insight about the data.''')
 
 st.markdown('## Download the data:')
-st.markdown('''In this section we will give brief insights about the data.''')
+st.markdown('''[Github Link](https://github.com/alioh/AlRiyadh-Newspaper-Covid-Dataset/raw/master/Alriyadh_News_Dataset.zip)''')
+st.markdown('''##### The file is zipped because it is big ( +360 MB )''')
 
 st.markdown('## Usage policies:')
-st.markdown('''In this section we will give brief insights about the data.''')
+st.markdown(''' here ''')
 
 st.markdown('## Team:')
 st.markdown('''The team behind this project:

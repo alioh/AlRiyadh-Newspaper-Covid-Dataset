@@ -1,25 +1,35 @@
 import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.express as px
 
 st.markdown('# AlRiyadh Newspaper Coverage of COVID-19')
 
+# -------------- #
 
 st.markdown('## About the Data:')
 st.markdown('''This dataset is part of a research that we will shared soon. The data
 origin is [Alriyadh](https://www.alriyadh.com/) newspaper. It contains all
-news articles until 31/01/2021 that have the following words:
+news articles until **31/01/2021** that have the following words:
 - Corona.
 - Covid-19.
 - حظر التجول.
 - كوفيد المستجد.
 - منع التجول.''')
 
+# -------------- #
+
 st.markdown('## Purpose of the Data:')
 st.markdown('''We shared this brief EDA about the data in-order to give
 you an insight on how the data looks like. Please share with us your
 results if you worked on the data.''')
 
+# -------------- #
+
 st.markdown('## Data origin:')
 st.markdown('''The data were scraped / collected from [Alriyadh](https://www.alriyadh.com/) newspaper.''')
+
+# -------------- #
 
 st.markdown('## Data Size:')
 st.markdown('''Each word have different size:
@@ -36,10 +46,10 @@ st.text('')
 st.markdown('''The total size of the dataset after deleting news articles that have more of one
 word in our selection of words is: **24084 rows**''')
 
-st.markdown('## Data Elements:')
-st.markdown('''The following table explains each column in our data and where it
-came from:
+# -------------- #
 
+st.markdown('## Data Elements:')
+st.markdown('''The following table explains each column the dataset:
 
 | Column | Description | Datatype | Example |
 | :--: | :--: | :--: | :--: |
@@ -60,21 +70,45 @@ came from:
 | FullText | Title + Subtitle + Text | String | `أمير الجوف يشدّد على تطبيق الإجراءات الاحترازية\\n ورصد المخالفات رأس اجتماع ... في تحقيقها ولله الحمد`  |
 | FullTextCleaned | FullText column after cleaning and removing unwanted characters (English words, numbers, new line character '\\n') | String | `أمير الجوف يشدّد على تطبيق الإجراءات الاحترازية ورصد المخالفات رأس اجتماع ... في تحقيقها ولله الحمد` |
 | FullTextWords | FullTextCleaned text split into words | List | `['أمير', 'الجوف', 'يشدّد', 'على', 'تطبيق', 'الإجراءات', ... 'الحمد']` |
-| WordsCounts | Counts of how many words in an news article after cleaning | Integer | `201` |
+| WordsCounts | Counts of how many words in a news article after cleaning | Integer | `201` |
 ''')
 
 st.text('')
 st.markdown('''\* For this column, to view the content, add `alriyadh.com/` before it followed by the value.''')
 
+# -------------- #
+
 st.markdown('## Exploratory Data Analysis:')
-st.markdown('''In this section, we will give you a brief insight about the data.''')
+st.markdown('''In this section, we will give a brief insight about the data:''')
+
+# -- Chart #1 -- #
+
+NewsOverTime = pd.read_csv('EDA/NewsOverTime.csv', index_col=[0])
+st.markdown('''### New articles over time:
+##### Double right click to reset graph.''')
+NewsOverTimeFig = px.line(NewsOverTime, x="Date", y="Total")
+st.plotly_chart(NewsOverTimeFig, use_container_width=True)
+
+
+# -- Chart #2 -- #
+
+DaysNews = pd.read_csv('EDA/DaysNews.csv', index_col=[0])
+st.markdown('''### News articles by day:''')
+DaysNewsfig = px.bar(DaysNews[['Day', 'Total']], x="Day", y="Total", text="Total")
+st.plotly_chart(DaysNewsfig, use_container_width=True)
+
+# -------------- #
 
 st.markdown('## Download the data:')
 st.markdown('''[Github Link](https://github.com/alioh/AlRiyadh-Newspaper-Covid-Dataset/raw/master/Alriyadh_News_Dataset.zip)''')
 st.markdown('''##### The file is zipped because it is big ( +360 MB )''')
 
+# -------------- #
+
 st.markdown('## Usage policies:')
 st.markdown(''' here ''')
+
+# -------------- #
 
 st.markdown('## Team:')
 st.markdown('''The team behind this project:

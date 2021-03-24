@@ -4,7 +4,7 @@
 ## About the Data:
 This dataset is part of a research that we will shared soon. The data
 origin is [Alriyadh](https://www.alriyadh.com/) newspaper. It contains all
-news articles until 31/01/2021 that have the following words:
+news articles until **31/01/2021** that have the following words:
 - Corona.
 - Covid-19.
 - حظر التجول.
@@ -35,8 +35,7 @@ The total size of the dataset after deleting news articles that have more of one
 word in our selection of words is: **24084 rows**
 
 ## Data Elements:
-The following table explains each column in our data and where it
-came from:
+The following table explains each column the dataset:
 
 
 | Column | Description | Datatype | Example |
@@ -55,10 +54,10 @@ came from:
 | Captions | If the news article have more than one image, the captions will be added here | List | `['مواعيد إلكترونية لاستقبال المراجعين', 'تطبيق مواعيد الدخول في المحاكم']` |
 | URL | Direct link to the news article | String | `http://www.alriyadh.com/1867288` |
 | Terms | Terms used in the news article from the previous 5 mentioned in __About the Data__ | List | `['كورونا', 'حظر التجول']` |
-| FullText | Title + Subtitle + Text | String | `أمير الجوف يشدّد على تطبيق الإجراءات الاحترازية\\n ورصد المخالفات رأس اجتماع ... في تحقيقها ولله الحمد`  |
+| FullText | Title + Subtitle + Text | String | `أمير الجوف يشدّد على تطبيق الإجراءات الاحترازية\\n ورصد المخالفات رأس اجتماع ... في تحقيقها ولله الحمد` |
 | FullTextCleaned | FullText column after cleaning and removing unwanted characters (English words, numbers, new line character '\\n | String | `أمير الجوف يشدّد على تطبيق الإجراءات الاحترازية ورصد المخالفات رأس اجتماع ... في تحقيقها ولله الحمد` |
 | FullTextWords | FullTextCleaned text split into words | List | `['أمير', 'الجوف', 'يشدّد', 'على', 'تطبيق', 'الإجراءات', ... 'الحمد']` |
-| WordsCounts | Counts of how many words in an news article after cleaning | Integer | `201` |
+| WordsCounts | Counts of how many words in a news article after cleaning | Integer | `201` |
 
 \* For this column, to view the content, add `alriyadh.com/` before it followed by the value.
 

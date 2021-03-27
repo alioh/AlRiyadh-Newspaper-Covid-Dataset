@@ -77,7 +77,7 @@ st.markdown('''The following table explains each column the dataset:
 ''')
 
 st.text('')
-st.markdown('''\* For this column, to view the content, add `alriyadh.com/` before it followed by the value.''')
+st.markdown('''\* For this column, to view the content, add `alriyadh.com` before it followed by the value.''')
 
 # -------------- #
 
@@ -87,8 +87,9 @@ st.markdown('''In this section, we will give a brief insight about the data:''')
 # -- Chart #1 -- #
 
 NewsOverTime = pd.read_csv('EDA/NewsOverTime.csv', index_col=[0])
-st.markdown('''### New articles over time: 
-##### Double right click to reset graph.''')
+st.markdown('''### New articles over time:''') 
+st.markdown('''News articles published after July 2019.''')
+st.markdown('''##### Double right click to reset graph.''')
 NewsOverTimeFig = px.line(NewsOverTime[NewsOverTime['Date'] > '2019-07-01'], x="Date", y="Total")
 st.plotly_chart(NewsOverTimeFig, use_container_width=True)
 
@@ -105,7 +106,8 @@ st.plotly_chart(DaysNewsfig, use_container_width=True)
 NewsByCategory = pd.read_csv('EDA/NewsCategoryByMonth.csv', index_col=[0])
 st.markdown('''### News articles by category:''')
 st.markdown('''News articles published in 2020''')
-NewsByCategoryfig = px.scatter(NewsByCategory[NewsByCategory["Year"] == 2020], x="Month", y="Total",
+NewsByCategoryfig = px.scatter(NewsByCategory[NewsByCategory["Year"] == 2020],
+                               x="Month", y="Total",
                                size='Total', color="Category")
 st.plotly_chart(NewsByCategoryfig, use_container_width=True)
 

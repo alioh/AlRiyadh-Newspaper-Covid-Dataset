@@ -46,8 +46,8 @@ The following table explains each column the dataset:
 | ID * | News article ID | Integer | `1867288` |
 | Category | Which category in the newspaper the news article were published | String | `مقالات اليوم` / `أخبار المناطق` |
 | Source | Source of the news article. Can be news source or the auther name | String | `الرياض - واس` or `خالد بن علي المطرفي` |
-| Date | Date | Date | `01/02/2021` |
-| Time | If null means the news article didn't have time entry | Time | `12:05:51` |
+| Date | Date | Date | `2020-03-27` |
+| Time | If null means the news article didn't have time entry | String | `12:05:51` |
 | Title | News article title | String | `أمير الجوف يشدّد على تطبيق الإجراءات الاحترازيه` |
 | Subtitle | News article subtitle, not always filled | String | `رأس اجتماع غرفة العمليات المشتركة` |
 | Text | News article text | String | `شدّد صاحب السمو الملكي الأمير فيصل بن نواف بن عبدالعزيز...` |

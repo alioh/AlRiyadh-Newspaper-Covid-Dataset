@@ -29,6 +29,13 @@ results if you worked on the data.''')
 
 # -------------- #
 
+st.markdown('## Value of the Data:')
+st.markdown('''- Alriyadh COVID News is the first, largest dataset that contains newspaper articles ranging from national and international news to opinion columns published to address topics related to COVID-19. 
+- The dataset can help to accurately generate events timeline that can be used to interpret trends in COVID related data.  
+- It can be also useful for pretraining and fine-tuning deep learning pre-trained language models on downstream Arabic NLP.''')
+
+# -------------- #
+
 st.markdown('## Data origin:')
 st.markdown('''The data were scraped / collected from [Alriyadh](https://www.alriyadh.com/) newspaper.''')
 
@@ -103,11 +110,48 @@ st.plotly_chart(DaysNewsfig, use_container_width=True)
 
 # -- Chart #3 -- #
 
-NewsByCategory = pd.read_csv('EDA/NewsCategoryByMonth.csv', index_col=[0])
+NewsByCategory = pd.read_csv('EDA/NewsCategoryByMonthEN.csv', index_col=[0])
 st.markdown('''### News articles by category:''')
-st.markdown('''News articles published in 2020''')
-NewsByCategoryfig = px.treemap(NewsByCategory, path=[px.Constant('Year'), 'Month', 'Category'], values='Total',
-                  color='Total', hover_data=['Total'])
+st.markdown('''News articles published in 2020. Translation for categories in this dataset:''')
+st.markdown('''
+**Arabic**|**English**
+:-----:|:-----:
+الأخبار المصورة|News in Photos
+مقالات اليوم|Today's Articles
+متابعات|Follow-ups
+المنوعات|Miscellaneous
+المحليات|Local News
+دنيا الرياضة|Sport World
+الدولية|International
+الاقتصاد|Economy
+الأولـــى|First Page
+الأخــيــرة|Last Page
+الرأي|Opinions
+كلمة الرياض|Riyadh Message
+طــب|Medicine
+أخبار المناطق|Regions News
+خزامى الصحارى|Deserts lavender
+سينما|Cinema
+صورة اليوم|Todays Photo
+فن|Art
+قول على قول|Words on Words
+محطات متحركة|Moving Stations
+فيديو الرياض|Riyadh Video
+ثقافة اليوم|Todays Culture
+تقارير دولية|World Reports
+تقارير رسومية|Graphical Reports
+الأخبار الهامة|Important News
+المجتمع الدولي|The International Community
+أدب الجمعة|Friday Literature
+الكاريكاتير|Caricature
+تحقيقات وتقارير|Investigations and reports
+ثقافة السبت|Saturday Education
+اخر الثقافة|Latest news on culture
+آخر الأخبار|Latest News
+نجوم الأمس الرياضي|Yesterdays Sports Starts''')
+
+NewsByCategoryfig = px.treemap(NewsByCategory.reset_index(), path=[px.Constant('Year'), 'Month', 'CategoryEn'], values='Total',
+                  color='Total', hover_data=['CategoryAR', 'Total'])
 st.plotly_chart(NewsByCategoryfig, use_container_width=True)
 
 # -------------- #

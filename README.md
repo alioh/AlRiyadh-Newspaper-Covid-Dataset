@@ -19,6 +19,12 @@ We shared this brief EDA about the data in-order to give
 you an insight on how the data looks like. Please share with us your
 results if you worked on the data.
 
+## Value of the Data:
+- Alriyadh COVID News is the first, largest dataset that contains newspaper articles ranging from national and international news to opinion columns published to address topics related to COVID-19. 
+- The dataset can help to accurately generate events timeline that can be used to interpret trends in COVID related data.  
+- It can be also useful for pretraining and fine-tuning deep learning pre-trained language models on downstream Arabic NLP.
+
+
 ## Data origin:
 The data were scraped / collected from [Alriyadh](https://www.alriyadh.com/) newspaper.
 

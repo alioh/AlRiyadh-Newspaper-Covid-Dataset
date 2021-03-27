@@ -2,9 +2,9 @@
 
 
 ## About the Data:
-This dataset is part of a research that we will shared soon. The data
-origin is [Alriyadh](https://www.alriyadh.com/) newspaper. It contains all
-news articles until **1 February 2021** that have the following words:
+This dataset is part of a research that we will be shared soon. It is a dataset of Arabic newspapers
+articles addressing COVID-19 related events. The data origin is [Alriyadh][Alriyadh] newspaper.
+It contains all news articles until **1 February 2021** that have the following words:
 
 | Arabic | English Translation |
 | :--: | :--: |
@@ -97,3 +97,4 @@ The team behind this project:
 [CCAI]: https://creativecommons.org/licenses/by/4.0/
 [SD]: https://www.sciencedirect.com/
 [streamlit]: https://share.streamlit.io/alioh/alriyadh-newspaper-covid-dataset/dashboard.py
+[Alriyadh]: https://www.alriyadh.com/

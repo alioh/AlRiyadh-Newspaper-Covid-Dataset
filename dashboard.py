@@ -123,8 +123,8 @@ st.markdown('''### License:''')
 st.markdown('''The data is being made freely available for download under a
 [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).''')
 st.markdown('''### Citing the dataset:''')
-st.markdown('''Najwa Alghamdi and Ali Alohali, Saudi journalism in the age of COVID (2021).
-Submitted to Data in Brief. [Science Direct](https://www.sciencedirect.com/)).''')
+st.markdown('''Najwa Alghamdi and Ali Alohali, Saudi journalism in the age of COVID (2021).''')
+st.markdown('''Submitted to Data in Brief.''')
 
 
 # -------------- #

@@ -87,9 +87,9 @@ st.markdown('''In this section, we will give a brief insight about the data:''')
 # -- Chart #1 -- #
 
 NewsOverTime = pd.read_csv('EDA/NewsOverTime.csv', index_col=[0])
-st.markdown('''### New articles over time:
+st.markdown('''### New articles over time: 
 ##### Double right click to reset graph.''')
-NewsOverTimeFig = px.line(NewsOverTime, x="Date", y="Total")
+NewsOverTimeFig = px.line(NewsOverTime[NewsOverTime['Date'] > '2019-07-01'], x="Date", y="Total")
 st.plotly_chart(NewsOverTimeFig, use_container_width=True)
 
 
@@ -99,6 +99,15 @@ DaysNews = pd.read_csv('EDA/DaysNews.csv', index_col=[0])
 st.markdown('''### News articles by day:''')
 DaysNewsfig = px.bar(DaysNews[['Day', 'Total']], x="Day", y="Total", text="Total")
 st.plotly_chart(DaysNewsfig, use_container_width=True)
+
+# -- Chart #3 -- #
+
+NewsByCategory = pd.read_csv('EDA/NewsCategoryByMonth.csv', index_col=[0])
+st.markdown('''### News articles by category:''')
+st.markdown('''News articles published in 2020''')
+NewsByCategoryfig = px.scatter(NewsByCategory[NewsByCategory["Year"] == 2020], x="Month", y="Total",
+                               size='Total', color="Category")
+st.plotly_chart(NewsByCategoryfig, use_container_width=True)
 
 # -------------- #
 
@@ -113,9 +122,8 @@ st.markdown('''### License:''')
 st.markdown('''The data is being made freely available for download under a
 [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).''')
 st.markdown('''### Citing the dataset:''')
-st.markdown('''Najwa Alghamdi and Ali Alohali,
-Saudi journalism in the age of COVID,
-(the research is currently under review by [Science Direct](https://www.sciencedirect.com/)).''')
+st.markdown('''Najwa Alghamdi and Ali Alohali, Saudi journalism in the age of COVID (2021).
+Submitted to Data in Brief. [Science Direct](https://www.sciencedirect.com/)).''')
 
 
 # -------------- #

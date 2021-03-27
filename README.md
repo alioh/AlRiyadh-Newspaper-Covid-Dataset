@@ -65,7 +65,7 @@ The following table explains each column the dataset:
 \* For this column, to view the content, add `alriyadh.com/` before it followed by the value.
 
 ## Exploratory Data Analysis:
-Streamlit!
+[Streamlit][streamlit]
 
 ## Download the data:
 [Github Link][download]
@@ -76,9 +76,9 @@ Streamlit!
 ### License
 The data is being made freely available for download under a [Creative Commons Attribution 4.0 International license][CCAI].
 ### Citing the dataset:
-Najwa Alghamdi and Ali Alohali,
-Saudi journalism in the age of COVID,
-(the research is currently under review by [Science Direct][SD] )
+Najwa Alghamdi and Ali Alohali,  
+Saudi journalism in the age of COVID (2021).  
+Submitted to Data in Brief. [Science Direct](https://www.sciencedirect.com/)).
 
 ## Team:
 The team behind this project:
@@ -92,3 +92,4 @@ The team behind this project:
 [download]: https://github.com/alioh/AlRiyadh-Newspaper-Covid-Dataset/raw/master/Alriyadh_News_Dataset.zip
 [CCAI]: https://creativecommons.org/licenses/by/4.0/
 [SD]: https://www.sciencedirect.com/
+[streamlit]: https://share.streamlit.io/alioh/alriyadh-newspaper-covid-dataset/dashboard.py

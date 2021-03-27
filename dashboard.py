@@ -8,7 +8,7 @@ st.markdown('# Saudi journalism in the age of COVID')
 # -------------- #
 
 st.markdown('## About the Data:')
-st.markdown('''This dataset is part of a research that we will shared soon. The data
+st.markdown('''This dataset is part of a research that we will be shared soon. It is dataset of Arabic newspapers articles addressing COVID-19 related events. The data
 origin is [Alriyadh](https://www.alriyadh.com/) newspaper. It contains all
 news articles until **1 February 2021** that have the following words:
 
@@ -51,7 +51,7 @@ word in our selection of words is: **24084 rows**''')
 
 # -------------- #
 
-st.markdown('## Data Elements:')
+st.markdown('## Data Dictionary:')
 st.markdown('''The following table explains each column the dataset:
 
 | Column | Description | Datatype | Example |

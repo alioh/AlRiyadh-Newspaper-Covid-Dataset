@@ -121,7 +121,7 @@ st.markdown('''##### The file is zipped because it is big ( +360 MB )''')
 st.markdown('## License and Citation:')
 st.markdown('''### License:''')
 st.markdown('''The data is being made freely available for download under a
-[Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).''')
+[Creative Commons Attribution 3.0 International license](https://creativecommons.org/licenses/by-nc/3.0/).''')
 st.markdown('''### Citing the dataset:''')
 st.markdown('''Najwa Alghamdi and Ali Alohali, Saudi journalism in the age of COVID (2021).Submitted to Data in Brief.''')
 st.markdown('''We would like to thank Alriyadh Newspaper for making their articles archive publicly available.''')

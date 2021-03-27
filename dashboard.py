@@ -106,9 +106,8 @@ st.plotly_chart(DaysNewsfig, use_container_width=True)
 NewsByCategory = pd.read_csv('EDA/NewsCategoryByMonth.csv', index_col=[0])
 st.markdown('''### News articles by category:''')
 st.markdown('''News articles published in 2020''')
-NewsByCategoryfig = px.scatter(NewsByCategory[NewsByCategory["Year"] == 2020],
-                               x="Month", y="Total",
-                               size='Total', color="Category")
+NewsByCategoryfig = px.treemap(NewsByCategory, path=[px.Constant('Year'), 'Month', 'Category'], values='Total',
+                  color='Total', hover_data=['Total'])
 st.plotly_chart(NewsByCategoryfig, use_container_width=True)
 
 # -------------- #

@@ -74,10 +74,9 @@ The following table explains each column the dataset:
 
 ## License and Citation::
 ### License
-The data is being made freely available for download under a [Creative Commons Attribution 4.0 International license][CCAI].
+The data is being made freely available for download under a [Creative Commons Attribution 3.0 International license](https://creativecommons.org/licenses/by-nc/3.0/)[CCAI].
 ### Citing the dataset:
-Najwa Alghamdi and Ali Alohali, Saudi journalism in the age of COVID (2021).  
-Submitted to Data in Brief. [Science Direct](https://www.sciencedirect.com/)).
+Najwa Alghamdi and Ali Alohali, Saudi journalism in the age of COVID (2021). Submitted to Data in Brief. [Science Direct](https://www.sciencedirect.com/)).
 
 ## Team:
 The team behind this project:
@@ -86,7 +85,7 @@ The team behind this project:
 
 
 
-[najwa]: https://www.najwa-alghamdi.net/
+[najwa]: https://www.linkedin.com/in/dr-najwa-alghamdi-a77aa93/
 [ali]: https://www.alioh.com/
 [download]: https://github.com/alioh/AlRiyadh-Newspaper-Covid-Dataset/raw/master/Alriyadh_News_Dataset.zip
 [CCAI]: https://creativecommons.org/licenses/by/4.0/

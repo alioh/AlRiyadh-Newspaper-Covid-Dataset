@@ -3,19 +3,22 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 
-st.markdown('# AlRiyadh Newspaper Coverage of COVID-19')
+st.markdown('# Saudi journalism in the age of COVID')
 
 # -------------- #
 
 st.markdown('## About the Data:')
 st.markdown('''This dataset is part of a research that we will shared soon. The data
 origin is [Alriyadh](https://www.alriyadh.com/) newspaper. It contains all
-news articles until **31/01/2021** that have the following words:
-- Corona.
-- Covid-19.
-- حظر التجول.
-- كوفيد المستجد.
-- منع التجول.''')
+news articles until **1 February 2021** that have the following words:
+
+| Arabic | English Translation |
+| :--: | :--: |
+| كورونا | Corona |
+| كوفيد-19 | Covid-19 |
+| كوفيد المستجد | New Covid |
+| حظر التجول | Curfew |
+| منع التجول | Curfew |''')
 
 # -------------- #
 
@@ -38,8 +41,8 @@ st.markdown('''Each word have different size:
 | :--: | :------------------: |
 | كورونا | 21961 |
 | كوفيد-19 | 1266 |
-| حظر التجول | 1087 |
 | كوفيد المستجد | 3044 |
+| حظر التجول | 1087 |
 | منع التجول | 1255 |''')
 
 st.text('')
@@ -105,8 +108,15 @@ st.markdown('''##### The file is zipped because it is big ( +360 MB )''')
 
 # -------------- #
 
-st.markdown('## Usage policies:')
-st.markdown(''' here ''')
+st.markdown('## License and Citation:')
+st.markdown('''### License:''')
+st.markdown('''The data is being made freely available for download under a
+[Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).''')
+st.markdown('''### Citing the dataset:''')
+st.markdown('''Najwa Alghamdi and Ali Alohali,
+Saudi journalism in the age of COVID,
+(the research is currently under review by [Science Direct](https://www.sciencedirect.com/)).''')
+
 
 # -------------- #
 

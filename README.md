@@ -4,12 +4,15 @@
 ## About the Data:
 This dataset is part of a research that we will shared soon. The data
 origin is [Alriyadh](https://www.alriyadh.com/) newspaper. It contains all
-news articles until **31/01/2021** that have the following words:
-- Corona.
-- Covid-19.
-- حظر التجول.
-- كوفيد المستجد.
-- منع التجول.
+news articles until **1 February 2021** that have the following words:
+
+| Arabic | English Translation |
+| :--: | :--: |
+| كورونا | Corona |
+| كوفيد-19 | Covid-19 |
+| كوفيد المستجد | New Covid |
+| حظر التجول | Curfew |
+| منع التجول | Curfew |
 
 ## Purpose of the Data:
 We shared this brief EDA about the data in-order to give
@@ -26,8 +29,8 @@ Each word have different size:
 | :--: | :------------------: |
 | كورونا | 21961 |
 | كوفيد-19 | 1266 |
-| حظر التجول | 1087 |
 | كوفيد المستجد | 3044 |
+| حظر التجول | 1087 |
 | منع التجول | 1255 |
 
 
@@ -69,7 +72,13 @@ Streamlit!
 ##### The file is zipped because it is big ( +360 MB )
 
 
-## Usage policies:
+## License and Citation::
+### License
+The data is being made freely available for download under a [Creative Commons Attribution 4.0 International license][CCAI].
+### Citing the dataset:
+Najwa Alghamdi and Ali Alohali,
+Saudi journalism in the age of COVID,
+(the research is currently under review by [Science Direct][SD] )
 
 ## Team:
 The team behind this project:
@@ -81,3 +90,5 @@ The team behind this project:
 [najwa]: https://www.najwa-alghamdi.net/
 [ali]: https://www.alioh.com/
 [download]: https://github.com/alioh/AlRiyadh-Newspaper-Covid-Dataset/raw/master/Alriyadh_News_Dataset.zip
+[CCAI]: https://creativecommons.org/licenses/by/4.0/
+[SD]: https://www.sciencedirect.com/

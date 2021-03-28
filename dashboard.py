@@ -7,7 +7,7 @@ st.markdown('# Saudi journalism in the age of COVID')
 
 # -------------- #
 
-st.markdown('''##### Make sure to view this app using light theme. ([Click here to learn how to change the theme](//ThemeSettings.png))''')
+st.markdown('''##### Make sure to view this app using light theme. ([Click here to learn how to change the theme](https://raw.githubusercontent.com/alioh/AlRiyadh-Newspaper-Covid-Dataset/master/ThemeSettings.png))''')
 
 # -------------- #
 

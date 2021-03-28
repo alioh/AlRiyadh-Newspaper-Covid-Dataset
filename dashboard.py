@@ -7,6 +7,10 @@ st.markdown('# Saudi journalism in the age of COVID')
 
 # -------------- #
 
+st.markdown('''##### Make sure to view this app using light theme. ([Click here to learn how to change the theme](//ThemeSettings.png))''')
+
+# -------------- #
+
 st.markdown('## About the Data:')
 st.markdown('''This dataset is part of a research that we will be shared soon. It is a dataset of Arabic newspapers
  articles addressing COVID-19 related events. The data origin is [Alriyadh](https://www.alriyadh.com/) newspaper.

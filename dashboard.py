@@ -12,7 +12,7 @@ st.markdown('''##### Make sure to view this app using light theme. ([Click here 
 # -------------- #
 
 st.markdown('## About the Data:')
-st.markdown('''This dataset is part of a research that we will be shared soon. It is a dataset of Arabic newspapers
+st.markdown('''This dataset is part of a research that we will share soon. It is a dataset of Arabic newspapers
  articles addressing COVID-19 related events. The data origin is [Alriyadh](https://www.alriyadh.com/) newspaper.
  It contains all news articles until **1 February 2021** that have the following words:
 
@@ -161,7 +161,7 @@ st.plotly_chart(NewsByCategoryfig, use_container_width=True)
 # -------------- #
 
 st.markdown('## Download the data:')
-st.markdown('''[Github Link](https://github.com/alioh/AlRiyadh-Newspaper-Covid-Dataset/raw/master/Alriyadh_News_Dataset.zip)''')
+st.markdown('''[GitHub Page Link](https://github.com/alioh/AlRiyadh-Newspaper-Covid-Dataset/), [Download Link](https://github.com/alioh/AlRiyadh-Newspaper-Covid-Dataset/raw/master/Alriyadh_News_Dataset.zip)''')
 st.markdown('''##### The file is zipped because it is big ( +360 MB )''')
 
 # -------------- #

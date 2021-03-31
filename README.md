@@ -2,7 +2,7 @@
 
 
 ## About the Data:
-This dataset is part of a research that we will be shared soon. It is a dataset of Arabic newspapers
+This dataset is part of a research that we will share soon. It is a dataset of Arabic newspapers
 articles addressing COVID-19 related events. The data origin is [Alriyadh][Alriyadh] newspaper.
 It contains all news articles until **1 February 2021** that have the following words:
 
@@ -74,7 +74,7 @@ The following table explains each column the dataset:
 [Streamlit][streamlit]
 
 ## Download the data:
-[Github Link][download]
+[GitHub Page Link][github], [Github Link][download]
 ##### The file is zipped because it is big ( +360 MB )
 
 
@@ -98,3 +98,4 @@ The team behind this project:
 [SD]: https://www.sciencedirect.com/
 [streamlit]: https://share.streamlit.io/alioh/alriyadh-newspaper-covid-dataset/dashboard.py
 [Alriyadh]: https://www.alriyadh.com/
+[github]: https://github.com/alioh/AlRiyadh-Newspaper-Covid-Dataset/

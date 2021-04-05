@@ -116,47 +116,58 @@ st.plotly_chart(DaysNewsfig, use_container_width=True)
 
 NewsByCategory = pd.read_csv('EDA/NewsCategoryByMonthEN.csv', index_col=[0])
 st.markdown('''### News articles by category:''')
-st.markdown('''News articles published in 2020. Translation for categories in this dataset:''')
+st.markdown('''News articles published > 2020. Translation for categories in this dataset:''')
 st.markdown('''
-**Arabic**|**English**
-:-----:|:-----:
-الأخبار المصورة|News in Photos
-مقالات اليوم|Today's Articles
-متابعات|Follow-ups
-المنوعات|Miscellaneous
-المحليات|Local News
-دنيا الرياضة|Sport World
-الدولية|International
-الاقتصاد|Economy
-الأولـــى|First Page
-الأخــيــرة|Last Page
-الرأي|Opinions
-كلمة الرياض|Riyadh Message
-طــب|Medicine
-أخبار المناطق|Regions News
-خزامى الصحارى|Deserts lavender
-سينما|Cinema
-صورة اليوم|Todays Photo
-فن|Art
-قول على قول|Words on Words
-محطات متحركة|Moving Stations
-فيديو الرياض|Riyadh Video
-ثقافة اليوم|Todays Culture
-تقارير دولية|World Reports
-تقارير رسومية|Graphical Reports
-الأخبار الهامة|Important News
-المجتمع الدولي|The International Community
-أدب الجمعة|Friday Literature
-الكاريكاتير|Caricature
-تحقيقات وتقارير|Investigations and reports
-ثقافة السبت|Saturday Education
-اخر الثقافة|Latest news on culture
-آخر الأخبار|Latest News
-نجوم الأمس الرياضي|Yesterdays Sports Starts''')
+**Arabic**|**English**|**Total News Articles**|
+:-----:|:-----:|:-----:|
+الأخبار المصورة|News in Photos|29
+مقالات اليوم|Today's Articles|1112
+متابعات|Follow-ups|845
+المنوعات|Miscellaneous|295
+المحليات|Local News|5178
+دنيا الرياضة|Sport World|2347
+الدولية|International|5339
+الاقتصاد|Economy|2658
+الأولـــى|First Page|192
+الأخــيــرة|Last Page|674
+الرأي|Opinions|522
+كلمة الرياض|Riyadh Message|80
+طــب|Medicine|8
+أخبار المناطق|Regions News|859
+خزامى الصحارى|Deserts lavender|24
+سينما|Cinema|3
+صورة اليوم|Today's Photo|10
+فن|Art|101
+قول على قول|Words on Words|7
+محطات متحركة|Moving Stations|3
+فيديو الرياض|Riyadh Video|1
+ثقافة اليوم|Today's Culture|235
+تقارير دولية|World Reports|4
+تقارير رسومية|Graphical Reports|14
+الأخبار الهامة|Important News|3
+المجتمع الدولي|The International Community|1
+أدب الجمعة|Friday Literature|1
+الكاريكاتير|Caricature|1
+تحقيقات وتقارير|Investigations and reports|2
+ثقافة السبت|Saturday Education|2
+اخر الثقافة|Latest news on culture|19
+آخر الأخبار|Latest News|1
+نجوم الأمس الرياضي|Yesterdays Sports Starts|1''')
 
 NewsByCategoryfig = px.treemap(NewsByCategory.reset_index(), path=[px.Constant('Year'), 'Month', 'CategoryEn'], values='Total',
                   color='Total', hover_data=['CategoryAR', 'Total'])
 st.plotly_chart(NewsByCategoryfig, use_container_width=True)
+
+# -- Chart #4 -- #
+
+NewsByCategoryHisto = NewsByCategory.groupby('CategoryEn')['Total'].sum().reset_index()
+NewsByCategoryHistofig = px.histogram(NewsByCategoryHisto, x="CategoryEn", y="Total")
+st.plotly_chart(NewsByCategoryHistofig, use_container_width=True)
+
+# -- Chart #5 -- #
+
+NewsByCategoryPiefig = px.pie(NewsByCategoryHisto, values='Total', names='CategoryEn')
+st.plotly_chart(NewsByCategoryPiefig, use_container_width=True)
 
 # -------------- #
 
